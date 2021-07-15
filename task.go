@@ -40,7 +40,7 @@ func isPalindrome(str string, s, e int) bool {
 	return str[s] == str[e] && isPalindrome(str, s+1, e-1)
 }
 func Palindrome(str string) bool {
-	return isPalindrome(str, 0, len(str))
+	return isPalindrome(str, 0, len(str)-1)
 }
 
 // IV. Odd even sum
@@ -70,5 +70,5 @@ func hasDuplicate(arr []int) bool {
 
 // the input part
 func main() {
-
+	fmt.Print(Palindrome("strts"))
 }
